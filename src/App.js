@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
+import Page1 from "./Page1/Page1";
+import Page2 from "./Page2/Page2";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Page 1</Link>
+              </li>
+              <li>
+                <Link to="/p2/">Page 2</Link>
+              </li>
+
+            </ul>
+          </nav>
+
+          <Route path="/" exact component={Page1} />
+          <Route path="/p2" exact component={Page2} />
+
+        </div>
+      </Router>
     </div>
   );
 }
