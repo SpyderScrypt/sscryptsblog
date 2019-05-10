@@ -1,0 +1,33 @@
+.reactPostList {
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .postTitle {
+    font-size: 50px;
+    color: #271e52;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .postTitle:hover {
+    text-decoration: underline;
+  }
+  
+  .preText {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6em;
+  }
+  
+  .postListContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  

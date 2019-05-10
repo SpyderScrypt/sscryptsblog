@@ -2,9 +2,8 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SpyderScrypt.github.io/sscryptsblog/",
   "dependencies": {
-    "gh-pages": "^2.0.1",
+    "font-awesome": "^4.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",

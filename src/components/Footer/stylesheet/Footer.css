@@ -1,0 +1,36 @@
+.footerContainer {
+  background-color: #222222;
+  display: flex;
+  padding: 5% 5% 5% 5%;
+  color: #ffffff;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+
+.contactField {
+  display: flex;
+}
+
+.contactText {
+  margin: 0;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.instagramLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .footerContainer {
+    flex-wrap: wrap;
+  }
+}

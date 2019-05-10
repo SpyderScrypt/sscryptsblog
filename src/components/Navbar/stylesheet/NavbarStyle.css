@@ -1,0 +1,53 @@
+.navbarContainer {
+    background-color: #271e52;
+    text-align: center;
+    color: aliceblue;
+    height: 10vh;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .linksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .linksContainer {
+    margin-right: 3%;
+    /* cursor: pointer; */
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .links {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: inherit;
+  }
+  
+  .links:hover {
+    text-decoration: none;
+    color: #b6b6b6;
+  }
+  
+  .logoContainer {
+    float: left;
+    margin-left: 3%;
+    cursor: pointer;
+    height: 80px;
+    width: 80px
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .linksContainer {
+      font-size: 11px;
+    }
+    .logoContainer{
+      height: 50px;
+      width: 50px
+    }
+  }
