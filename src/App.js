@@ -15,19 +15,19 @@ class App extends Component {
       {
         title: "React",
         link: "react"
-      },
-      {
-        title: "React Native",
-        link: "#team"
-      },
-      {
-        title: "Python",
-        link: "#instagram"
-      },
-      {
-        title: "Javascript",
-        link: "#footer"
       }
+      // {
+      //   title: "React Native",
+      //   link: "#team"
+      // },
+      // {
+      //   title: "Python",
+      //   link: "#instagram"
+      // },
+      // {
+      //   title: "Javascript",
+      //   link: "#footer"
+      // }
     ];
     return (
       <div className="App">
