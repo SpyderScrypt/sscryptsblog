@@ -7,7 +7,7 @@ export default class Navbar extends Component {
     return (
       <div className="navbarContainer">
         <div className="logoContainer">
-          <img src={this.props.logoPath} alt="" height="100%" width="100%" />
+          <img src="/images/spider.png" alt="" height="100%" width="100%" />
         </div>
         <div className="linksContainer">
           {this.props.title.map(title => {

@@ -33,7 +33,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <Navbar logoPath="./images/spider.png" title={titleObj} />
+            <Navbar title={titleObj} />
           </div>
           <Route path="/" exact component={AllPostsList} />
 
