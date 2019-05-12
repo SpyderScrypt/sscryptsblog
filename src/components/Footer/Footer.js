@@ -8,16 +8,16 @@ export default class Footer extends Component {
       <div className="footerContainer" id="footer">
         <div className="contactContainer">
           <div className="contactField">
-            <i class="fa fa-envelope fa-2x" aria-hidden="true" />
+            <i className="fa fa-envelope fa-2x" aria-hidden="true" />
             <p className="contactText">spiderscrypt@gmail.com</p>
           </div>
           <div className="contactField">
-            <i class="fa fa-phone-square fa-2x" aria-hidden="true" />
+            <i className="fa fa-phone-square fa-2x" aria-hidden="true" />
 
             <p className="contactText">7021889082</p>
           </div>
           <div className="contactField">
-            <i class="fa fa-instagram fa-2x" aria-hidden="true" />
+            <i className="fa fa-instagram fa-2x" aria-hidden="true" />
 
             <a
               className="instagramLink"

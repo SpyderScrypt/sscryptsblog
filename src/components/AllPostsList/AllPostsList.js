@@ -9,16 +9,14 @@ export default class AllPostsList extends Component {
     super(props);
     this.state = {
       redirect: false,
-      slug: null,
-      postDetails: null
+      slug: null
     };
   }
 
-  redirectHandler = (e, slug, postDetails) => {
+  redirectHandler = (e, slug) => {
     this.setState({
       redirect: true,
-      slug: slug,
-      postDetails: postDetails
+      slug: slug
     });
   };
 
@@ -28,8 +26,7 @@ export default class AllPostsList extends Component {
         <Redirect
           push
           to={{
-            pathname: `${process.env.PUBLIC_URL}/${this.state.slug}`,
-            state: { postDetails: this.state.postDetails }
+            pathname: `${process.env.PUBLIC_URL}/${this.state.slug}`
           }}
         />
       );
@@ -39,14 +36,13 @@ export default class AllPostsList extends Component {
       <div className="reactPostList">
         {allPostList.map(post => {
           let slug = post.slug;
-          let postDetails = post;
 
           return (
             <div key={post.id} className="postListContainer">
               <p
                 // to={`${process.env.PUBLIC_URL}/react/${post.slug}`}
                 onClick={e => {
-                  this.redirectHandler(e, slug, postDetails);
+                  this.redirectHandler(e, slug);
                 }}
                 className="postTitle"
               >

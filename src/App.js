@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import ReactPostList from "./components/ReactPostList/ReactPostList";
 import SinglePostContainer from "./components/SinglePostContainer/SinglePostContainer";

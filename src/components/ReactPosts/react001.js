@@ -10,12 +10,10 @@ export default class react001 extends Component {
           Tags :
           {this.props.postDetails.tags.map((tag, index) => {
             return (
-              <>
-                <span className="tag" key={index}>
-                  {tag}
-                </span>
+              <span key={index}>
+                <span className="tag">{tag}</span>
                 <span> </span>
-              </>
+              </span>
             );
           })}
         </p>
