@@ -6,6 +6,7 @@ import ReactPostList from "./components/ReactPostList/ReactPostList";
 import SinglePostContainer from "./components/SinglePostContainer/SinglePostContainer";
 import AllPostsList from "./components/AllPostsList/AllPostsList";
 import Footer from "./components/Footer/Footer";
+import NodePostsList from "./components/NodePostsList/NodePostsList";
 // import { createBrowserHistory } from "history";
 // const customHistory = createBrowserHistory();
 
@@ -15,11 +16,11 @@ class App extends Component {
       {
         title: "React",
         link: "react"
+      },
+      {
+        title: "Node",
+        link: "node"
       }
-      // {
-      //   title: "React Native",
-      //   link: "#team"
-      // },
       // {
       //   title: "Python",
       //   link: "#instagram"
@@ -38,7 +39,9 @@ class App extends Component {
           <Route path="/" exact component={AllPostsList} />
 
           <Route path="/react" exact component={ReactPostList} />
+          <Route path="/node" exact component={NodePostsList} />
           <Route path="/react/:slug" exact component={SinglePostContainer} />
+          <Route path="/node/:slug" exact component={SinglePostContainer} />
           <Footer />
         </Router>
       </div>

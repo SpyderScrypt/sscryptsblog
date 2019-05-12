@@ -7,21 +7,39 @@ export default class SinglePostContainer extends Component {
     super(props);
     this.state = { module: null, selectedPost: null };
   }
-  async componentDidMount() {
-    // Dynamically import component
+  componentDidMount() {
+    // console.log("location", this.props.location.pathname.split("/")[1]);
+    // Dynamically import Json file
+    import(
+      `../../jsonFiles/${this.props.location.pathname.split("/")[1]}Posts.json`
+    ).then(module => {
+      console.log("asdasdasdasd", module.default);
+      module.default.forEach(post => {
+        if (post.id === this.props.match.params.slug) {
+          this.setState({
+            selectedPost: post
+          });
+        }
+      });
 
-    await reactPosts.forEach(post => {
+      // Dynamically import component
 
-      if (post.id === this.props.match.params.slug) {
-        this.setState({
-          selectedPost: post
-        });
-      }
+      import(`../${this.state.selectedPost.path}.js`).then(module => {
+        this.setState({ module: module.default });
+      });
     });
 
-    import(`../${this.state.selectedPost.path}.js`).then(module => {
-      this.setState({ module: module.default });
-    });
+    // reactPosts.forEach(post => {
+    //   if (post.id === this.props.match.params.slug) {
+    //     this.setState({
+    //       selectedPost: post
+    //     });
+    //   }
+    // });
+
+    // import(`../${this.state.selectedPost.path}.js`).then(module => {
+    //   this.setState({ module: module.default });
+    // });
   }
   render() {
     const { module: Component } = this.state;
