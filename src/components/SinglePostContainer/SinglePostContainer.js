@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./stylesheet/SinglePostContainerStyle.css";
-import reactPosts from "../../jsonFiles/reactPosts.json";
 
 export default class SinglePostContainer extends Component {
   constructor(props) {
@@ -46,7 +45,11 @@ export default class SinglePostContainer extends Component {
 
     return (
       <div className="post-container">
-        {Component && <Component postDetails={this.state.selectedPost} />}
+        {Component ? (
+          <Component postDetails={this.state.selectedPost} />
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
     );
   }
