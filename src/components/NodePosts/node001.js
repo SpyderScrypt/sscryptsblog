@@ -27,6 +27,7 @@ export default class node001 extends Component {
         </div>
         <p className="seperator1">...</p>
         <p className="content1">
+          <br />
           Step 1 →
           <br />
           First lets make a server using node and express to serve a pdf file.
@@ -44,6 +45,7 @@ export default class node001 extends Component {
         </p>
 
         <p className="content1">
+          <br />
           Step 2 →
           <br />
           Create a folder called public and inside that folder put a pdf file
@@ -52,6 +54,7 @@ export default class node001 extends Component {
         </p>
 
         <p className="content1">
+          <br />
           Step 3 →
           <br />
           Then open previously created app.js file and put below content in it
@@ -86,6 +89,7 @@ app.listen(port, () => {
           <br />
           node app.js
           <br />
+          <br />
           Step 4 →
           <br />
           Now let's create our react end of the app
@@ -97,13 +101,12 @@ app.listen(port, () => {
           (You can run this command inside server folder or outside server
           folder)
           <br />
-          Step 4 →
-          <br />
           Lets install package axios (Below this tutorial there is fetch
           implementation of the same)
           <br />
           npm i axois
           <br />
+          <br/>
           Step 5 →
           <br />
           Inside client folder →src →App.js

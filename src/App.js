@@ -7,6 +7,7 @@ import SinglePostContainer from "./components/SinglePostContainer/SinglePostCont
 import AllPostsList from "./components/AllPostsList/AllPostsList";
 import Footer from "./components/Footer/Footer";
 import NodePostsList from "./components/NodePostsList/NodePostsList";
+import AlgoPostsList from "./components/AlgoPostsList/AlgoPostsList";
 // import { createBrowserHistory } from "history";
 // const customHistory = createBrowserHistory();
 
@@ -20,6 +21,10 @@ class App extends Component {
       {
         title: "Node",
         link: "node"
+      },
+      {
+        title: "Algorithms",
+        link: "algo"
       }
       // {
       //   title: "Python",
@@ -40,6 +45,9 @@ class App extends Component {
 
           <Route path="/react" exact component={ReactPostList} />
           <Route path="/node" exact component={NodePostsList} />
+          <Route path="/algo" exact component={AlgoPostsList} />
+
+          <Route path="/algo/:slug" exact component={SinglePostContainer} />
           <Route path="/react/:slug" exact component={SinglePostContainer} />
           <Route path="/node/:slug" exact component={SinglePostContainer} />
           <Footer />

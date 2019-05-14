@@ -1,0 +1,12 @@
+[
+  {
+    "id": "algo001",
+    "type": "node",
+    "title": "Find a pair of elements from an array whose sum equals a given number",
+    "tags": ["javascript", "python", "algorithm"],
+    "preText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ...",
+    "date": "January 14, 2018",
+    "slug": "algo/algo001",
+    "path": "AlgoPosts/algo001"
+  }
+]
