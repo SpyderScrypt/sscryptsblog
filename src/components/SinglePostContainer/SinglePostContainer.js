@@ -48,7 +48,7 @@ export default class SinglePostContainer extends Component {
         {Component ? (
           <Component postDetails={this.state.selectedPost} />
         ) : (
-          <p>Loading...</p>
+          <h3>Loading...</h3>
         )}
       </div>
     );
