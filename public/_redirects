@@ -3,5 +3,3 @@
 /node  https://www.sscrypts.com/   200
 /node/*  https://www.sscrypts.com/   200
 
-
-https://sscrypts.com/* https://www.sscrypts.com/:splat 301!
