@@ -1,3 +1,4 @@
 /react    http://www.blog.sscrypts.com/   200
 /react/*  http://www.blog.sscrypts.com/   200
+/node  http://www.blog.sscrypts.com/   200
 /node/*  http://www.blog.sscrypts.com/   200
