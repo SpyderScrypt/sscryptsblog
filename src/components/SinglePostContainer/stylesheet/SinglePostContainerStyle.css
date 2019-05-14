@@ -7,7 +7,7 @@
 }
 
 .inner-container {
-  width: 52%;
+  width: 65%;
 }
 
 .title {
@@ -45,6 +45,7 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
   text-align: center !important;
+  width: 100%;
 }
 
 .seperator1 {
