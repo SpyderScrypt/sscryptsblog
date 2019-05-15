@@ -30,3 +30,13 @@
   flex-direction: column;
   text-align: left;
 }
+
+/* Media queries */
+@media only screen and (max-width: 767px) {
+  .postTitle {
+    font-size: 30px !important;
+  }
+  .preText {
+    font-size: 15px !important;
+  }
+}

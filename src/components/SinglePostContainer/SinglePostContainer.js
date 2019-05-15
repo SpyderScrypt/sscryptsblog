@@ -12,7 +12,6 @@ export default class SinglePostContainer extends Component {
     import(
       `../../jsonFiles/${this.props.location.pathname.split("/")[1]}Posts.json`
     ).then(module => {
-      console.log("asdasdasdasd", module.default);
       module.default.forEach(post => {
         if (post.id === this.props.match.params.slug) {
           this.setState({

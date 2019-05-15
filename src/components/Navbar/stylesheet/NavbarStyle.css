@@ -44,7 +44,7 @@
   
   @media only screen and (max-width: 768px) {
     .linksContainer {
-      font-size: 11px;
+      /* font-size: 18px; */
     }
     .logoContainer{
       height: 50px;
