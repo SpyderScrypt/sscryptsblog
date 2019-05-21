@@ -9,6 +9,7 @@ export default class SinglePostContainer extends Component {
   componentDidMount() {
     // console.log("location", this.props.location.pathname.split("/")[1]);
     // Dynamically import Json file
+    
     import(
       `../../jsonFiles/${this.props.location.pathname.split("/")[1]}Posts.json`
     ).then(module => {
@@ -24,7 +25,6 @@ export default class SinglePostContainer extends Component {
 
       import(`../${this.state.selectedPost.path}.js`).then(module => {
         this.setState({ module: module.default });
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
       });
     });
 
