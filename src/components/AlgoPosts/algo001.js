@@ -47,6 +47,12 @@ export default class algo001 extends Component {
           We are going to solve the above problem using 3 ways
         </p>
         <p className="seperator1">...</p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "inline-block", width: "468px", height: "60px" }}
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="9686871571"
+        />
         <br />
         <p className="content1">
           First Way → 
@@ -111,6 +117,12 @@ export default class algo001 extends Component {
           Space Complexity - Space O(1)
         </p>
         <p className="seperator1">...</p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "inline-block", width: "468px", height: "60px" }}
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="9686871571"
+        />
         <p className="content1">
           Second Way →
           <br />
@@ -356,6 +368,14 @@ export default class algo001 extends Component {
           Time Complexity - O(nLog(n)) <br />
           Space Complexity - Space O(1)
         </p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
       </div>
     );
   }

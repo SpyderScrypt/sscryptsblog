@@ -26,6 +26,12 @@ export default class node001 extends Component {
           <img width="100%" src="/images/node001-01.png" alt="" />
         </div>
         <p className="seperator1">...</p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "inline-block", width: "468px", height: "60px" }}
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="9686871571"
+        />
         <p className="content1">
           <br />
           Step 1 →
@@ -106,7 +112,7 @@ app.listen(port, () => {
           <br />
           npm i axois
           <br />
-          <br/>
+          <br />
           Step 5 →
           <br />
           Inside client folder →src →App.js
@@ -210,6 +216,14 @@ fetch(\`http://localhost:4000/pdf\`, {
           receiving blob we are building url out of it and opening it in a new
           window
         </p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
       </div>
     );
   }

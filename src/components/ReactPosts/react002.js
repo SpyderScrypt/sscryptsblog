@@ -37,6 +37,12 @@ export default class react002 extends Component {
           tools and many more.
         </p>
         <p className="seperator1">...</p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "inline-block", width: "468px", height: "60px" }}
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="9686871571"
+        />
         <p className="content1">
           Step 1 —
           <br />
@@ -163,6 +169,14 @@ export default App;`}
           Later we will see how to make complex charts with echarts and how to
           create custom toolbox and much more about this library.
         </p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
       </div>
     );
   }

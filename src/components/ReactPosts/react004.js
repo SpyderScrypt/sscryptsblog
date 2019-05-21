@@ -24,6 +24,12 @@ export default class react004 extends Component {
         </p>
 
         <p className="seperator1">...</p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "inline-block", width: "468px", height: "60px" }}
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="9686871571"
+        />
 
         <p className="content1">
           First, let us understand how we can detect internet connection status
@@ -191,6 +197,14 @@ export default class react004 extends Component {
           <br />
           https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/Online_and_offline_events
         </p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
       </div>
     );
   }

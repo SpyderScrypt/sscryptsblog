@@ -24,6 +24,7 @@ export default class SinglePostContainer extends Component {
 
       import(`../${this.state.selectedPost.path}.js`).then(module => {
         this.setState({ module: module.default });
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
       });
     });
 

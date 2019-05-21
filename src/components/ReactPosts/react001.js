@@ -4,6 +4,14 @@ export default class react001 extends Component {
   render() {
     return (
       <div className="inner-container">
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
         <p className="title"> {this.props.postDetails.title}</p>
         <p className="date">Published on: {this.props.postDetails.date}</p>
         <p className="tags">
@@ -83,6 +91,13 @@ export default App;`}
           </pre>
         </div>
 
+        <ins
+          class="adsbygoogle"
+          style={{ display: "inline-block", width: "468px", height: "60px" }}
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="9686871571"
+        />
+
         <p className="content1">
           Then replace all xml:space and other tags to camel case format like
           xmlSpace. To do this you can also use online tools to convert SVG to
@@ -159,6 +174,14 @@ export default App;
           Now we have learned all 3 ways to use SVG in react. If you know some
           other ways then please share it in the comments section.
         </p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
       </div>
     );
   }

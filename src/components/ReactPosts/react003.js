@@ -58,7 +58,12 @@ export default App;
             </code>
           </pre>
         </div>
-
+        <ins
+          class="adsbygoogle"
+          style={{ display: "inline-block", width: "468px", height: "60px" }}
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="9686871571"
+        />
         <p className="content1">
           Step 2 →
           <br />
@@ -457,6 +462,14 @@ export default App;
           Hope you have learned how to make dynamic input field and can proceed
           to make a complete dynamic form with multiple dynamic input types.
         </p>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
       </div>
     );
   }
