@@ -1,6 +1,24 @@
 import React, { Component } from "react";
+import { firestore } from "../../firebase/firebase";
 
 export default class node001 extends Component {
+  componentDidMount = async () => {
+    const doc = await firestore
+      .collection("posts")
+      .doc("R6yws2OQAuVNtF36PQgH")
+      .get();
+
+
+    let allPostPageCount = doc.data().node001;
+    console.log(allPostPageCount);
+
+    firestore
+      .collection("posts")
+      .doc("R6yws2OQAuVNtF36PQgH")
+      .update({
+        node001: allPostPageCount + 1
+      });
+  };
   render() {
     return (
       <div className="inner-container">

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
+import { firestore } from "../../firebase/firebase";
+
 import allPostList from "../../jsonFiles/allPosts.json";
 import "./stylesheet/AllPostsListStyle.css";
 
@@ -12,6 +14,23 @@ export default class AllPostsList extends Component {
       slug: null
     };
   }
+
+  componentDidMount = async () => {
+    const doc = await firestore
+      .collection("posts")
+      .doc("R6yws2OQAuVNtF36PQgH")
+      .get();
+
+    let allPostPageCount = doc.data().allPosts;
+    console.log(allPostPageCount);
+
+    firestore
+      .collection("posts")
+      .doc("R6yws2OQAuVNtF36PQgH")
+      .update({
+        allPosts: allPostPageCount + 1
+      });
+  };
 
   redirectHandler = (e, slug) => {
     this.setState({
