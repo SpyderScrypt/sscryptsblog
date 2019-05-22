@@ -22,7 +22,6 @@ export default class AllPostsList extends Component {
       .get();
 
     let allPostPageCount = doc.data().allPosts;
-    console.log(allPostPageCount);
 
     firestore
       .collection("posts")

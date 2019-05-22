@@ -10,7 +10,6 @@ export default class node001 extends Component {
 
 
     let allPostPageCount = doc.data().node001;
-    console.log(allPostPageCount);
 
     firestore
       .collection("posts")

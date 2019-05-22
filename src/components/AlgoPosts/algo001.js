@@ -9,7 +9,6 @@ export default class algo001 extends Component {
       .get();
 
     let allPostPageCount = doc.data().algo001;
-    console.log(allPostPageCount);
 
     firestore
       .collection("posts")

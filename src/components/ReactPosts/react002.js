@@ -11,7 +11,6 @@ export default class react002 extends Component {
 
 
     let allPostPageCount = doc.data().react002;
-    console.log(allPostPageCount);
 
     firestore
       .collection("posts")
