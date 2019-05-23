@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase/firebase";
+import { Helmet } from "react-helmet";
 
 export default class react002 extends Component {
-
   componentDidMount = async () => {
     const doc = await firestore
       .collection("posts")
       .doc("R6yws2OQAuVNtF36PQgH")
       .get();
-
 
     let allPostPageCount = doc.data().react002;
 
@@ -23,6 +22,18 @@ export default class react002 extends Component {
   render() {
     return (
       <div className="inner-container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Using Echarts with React</title>
+          <meta
+            name="description"
+            content="So in this tutorial, we will see how to use echarts in React."
+          />
+          <meta
+            name="keywords"
+            cpntent="react,chart,echarts,javascript,react.js"
+          />
+        </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>
         <p className="date">Published on: {this.props.postDetails.date}</p>
         <p className="tags">
@@ -56,12 +67,7 @@ export default class react002 extends Component {
           tools and many more.
         </p>
         <p className="seperator1">...</p>
-        <ins
-          class="adsbygoogle"
-          style={{ display: "inline-block", width: "468px", height: "60px" }}
-          data-ad-client="ca-pub-1381796141216228"
-          data-ad-slot="9686871571"
-        />
+
         <p className="content1">
           Step 1 —
           <br />

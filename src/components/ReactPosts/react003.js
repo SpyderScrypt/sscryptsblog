@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase/firebase";
+import { Helmet } from "react-helmet";
 
 export default class react003 extends Component {
   componentDidMount = async () => {
@@ -7,7 +8,6 @@ export default class react003 extends Component {
       .collection("posts")
       .doc("R6yws2OQAuVNtF36PQgH")
       .get();
-
 
     let allPostPageCount = doc.data().react003;
 
@@ -21,6 +21,18 @@ export default class react003 extends Component {
   render() {
     return (
       <div className="inner-container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Dynamic form in React without a library</title>
+          <meta
+            name="description"
+            content="Dynamic(Reactive) form in React without a library"
+          />
+          <meta
+            name="keywords"
+            cpntent="react,form,echarts,javascript,react.js"
+          />
+        </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>
         <p className="date">Published on: {this.props.postDetails.date}</p>
         <p className="tags">
@@ -75,12 +87,7 @@ export default App;
             </code>
           </pre>
         </div>
-        <ins
-          class="adsbygoogle"
-          style={{ display: "inline-block", width: "468px", height: "60px" }}
-          data-ad-client="ca-pub-1381796141216228"
-          data-ad-slot="9686871571"
-        />
+
         <p className="content1">
           Step 2 →
           <br />

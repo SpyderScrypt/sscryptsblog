@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase/firebase";
+import { Helmet } from "react-helmet";
 
 export default class algo001 extends Component {
   componentDidMount = async () => {
@@ -21,6 +22,21 @@ export default class algo001 extends Component {
   render() {
     return (
       <div className="inner-container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>
+            Find a pair of elements from an array whose sum equals a given
+            number
+          </title>
+          <meta
+            name="description"
+            content="Find a pair of elements from an array whose sum equals a given number"
+          />
+          <meta
+            name="keywords"
+            cpntent="python,node,javascript,algorithm,node.js"
+          />
+        </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>
         <p className="date">Published on: {this.props.postDetails.date}</p>
         <p className="tags">
@@ -64,12 +80,7 @@ export default class algo001 extends Component {
           We are going to solve the above problem using 3 ways
         </p>
         <p className="seperator1">...</p>
-        <ins
-          class="adsbygoogle"
-          style={{ display: "inline-block", width: "468px", height: "60px" }}
-          data-ad-client="ca-pub-1381796141216228"
-          data-ad-slot="9686871571"
-        />
+
         <br />
         <p className="content1">
           First Way → 
@@ -134,12 +145,7 @@ export default class algo001 extends Component {
           Space Complexity - Space O(1)
         </p>
         <p className="seperator1">...</p>
-        <ins
-          class="adsbygoogle"
-          style={{ display: "inline-block", width: "468px", height: "60px" }}
-          data-ad-client="ca-pub-1381796141216228"
-          data-ad-slot="9686871571"
-        />
+
         <p className="content1">
           Second Way →
           <br />

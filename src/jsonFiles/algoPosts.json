@@ -1,11 +1,21 @@
 [
   {
-    "id": "algo001",
+    "id": "algo002",
     "type": "node",
+    "title": "Find second largest number in an array using javascript and python",
+    "tags": ["javascript", "python", "algorithm"],
+    "preText": "In this tutorial we will write a program to find second largest number in an array using javascript and python",
+    "date": "May 14, 2019",
+    "slug": "algo/algo002",
+    "path": "AlgoPosts/algo002"
+  },
+  {
+    "id": "algo001",
+    "type": "algorithm",
     "title": "Find a pair of elements from an array whose sum equals a given number",
     "tags": ["javascript", "python", "algorithm"],
-    "preText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ...",
-    "date": "January 14, 2018",
+    "preText": "In this tutorial we will write a program to find a pair of elements from an array whose sum equals a given number",
+    "date": "January 14, 2019",
     "slug": "algo/algo001",
     "path": "AlgoPosts/algo001"
   }

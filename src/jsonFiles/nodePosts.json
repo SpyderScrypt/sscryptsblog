@@ -4,8 +4,8 @@
     "type": "node",
     "title": "Send pdf from Node to React for viewing and downloading.",
     "tags": ["node", "react", "javascript", "svg", "pdf", "express.js"],
-    "preText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ...",
-    "date": "January 14, 2018",
+    "preText": "In this tutorial we will write a program to Send pdf from Node to React for viewing and downloading ...",
+    "date": "January 14, 2019",
     "slug": "node/node001",
     "path": "NodePosts/node001"
   }

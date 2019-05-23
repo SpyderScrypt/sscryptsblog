@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase/firebase";
+import { Helmet } from "react-helmet";
 
 export default class node001 extends Component {
   componentDidMount = async () => {
@@ -7,7 +8,6 @@ export default class node001 extends Component {
       .collection("posts")
       .doc("R6yws2OQAuVNtF36PQgH")
       .get();
-
 
     let allPostPageCount = doc.data().node001;
 
@@ -21,6 +21,18 @@ export default class node001 extends Component {
   render() {
     return (
       <div className="inner-container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Send pdf from Node to React</title>
+          <meta
+            name="description"
+            content="Send pdf from Node to React for viewing and downloading"
+          />
+          <meta
+            name="keywords"
+            cpntent="react,node,javascript,react.js,node.js,pdf"
+          />
+        </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>
         <p className="date">Published on: {this.props.postDetails.date}</p>
         <p className="tags">
@@ -43,12 +55,7 @@ export default class node001 extends Component {
           <img width="100%" src="/images/node001-01.png" alt="" />
         </div>
         <p className="seperator1">...</p>
-        <ins
-          class="adsbygoogle"
-          style={{ display: "inline-block", width: "468px", height: "60px" }}
-          data-ad-client="ca-pub-1381796141216228"
-          data-ad-slot="9686871571"
-        />
+
         <p className="content1">
           <br />
           Step 1 →

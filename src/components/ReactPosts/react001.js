@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase/firebase";
+import { Helmet } from "react-helmet";
 
 export default class react001 extends Component {
   componentDidMount = async () => {
@@ -7,7 +8,6 @@ export default class react001 extends Component {
       .collection("posts")
       .doc("R6yws2OQAuVNtF36PQgH")
       .get();
-
 
     let allPostPageCount = doc.data().react001;
 
@@ -22,6 +22,18 @@ export default class react001 extends Component {
   render() {
     return (
       <div className="inner-container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Using SVG with React</title>
+          <meta
+            name="description"
+            content="In this tutorial, we will understand 3 different ways to use SVG in react app"
+          />
+          <meta
+            name="keywords"
+            cpntent="react,svg,javascript,react.js"
+          />
+        </Helmet>
         <ins
           class="adsbygoogle"
           style={{ display: "block" }}
@@ -109,12 +121,6 @@ export default App;`}
           </pre>
         </div>
 
-        <ins
-          class="adsbygoogle"
-          style={{ display: "inline-block", width: "468px", height: "60px" }}
-          data-ad-client="ca-pub-1381796141216228"
-          data-ad-slot="9686871571"
-        />
 
         <p className="content1">
           Then replace all xml:space and other tags to camel case format like

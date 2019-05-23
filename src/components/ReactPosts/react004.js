@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { firestore } from "../../firebase/firebase";
+import { Helmet } from "react-helmet";
 
 export default class react004 extends Component {
   componentDidMount = async () => {
@@ -7,7 +8,6 @@ export default class react004 extends Component {
       .collection("posts")
       .doc("R6yws2OQAuVNtF36PQgH")
       .get();
-
 
     let allPostPageCount = doc.data().react004;
 
@@ -21,6 +21,20 @@ export default class react004 extends Component {
   render() {
     return (
       <div className="inner-container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>
+            Reusable component in react to check internet connection
+          </title>
+          <meta
+            name="description"
+            content="Create a reusable component in React to check internet connection"
+          />
+          <meta
+            name="keywords"
+            cpntent="react,echarts,javascript,react.js"
+          />
+        </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>
         <p className="date">Published on: {this.props.postDetails.date}</p>
         <p className="tags">
@@ -41,12 +55,6 @@ export default class react004 extends Component {
         </p>
 
         <p className="seperator1">...</p>
-        <ins
-          class="adsbygoogle"
-          style={{ display: "inline-block", width: "468px", height: "60px" }}
-          data-ad-client="ca-pub-1381796141216228"
-          data-ad-slot="9686871571"
-        />
 
         <p className="content1">
           First, let us understand how we can detect internet connection status

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
 import { firestore } from "../../firebase/firebase";
+import { Helmet } from "react-helmet";
 
 import allPostList from "../../jsonFiles/allPosts.json";
 import "./stylesheet/AllPostsListStyle.css";
@@ -52,6 +53,18 @@ export default class AllPostsList extends Component {
 
     return (
       <div className="reactPostList">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Latest Posts</title>
+          <meta
+            name="description"
+            content="Latest React, Node, Javascript Tutorial"
+          />
+          <meta
+            name="keywords"
+            cpntent="react,node,javascript,node.js,react.js,algorithm"
+          />
+        </Helmet>
         {allPostList.map(post => {
           let slug = post.slug;
 
