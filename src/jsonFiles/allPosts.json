@@ -58,5 +58,15 @@
     "date": "January 14, 2018",
     "slug": "algo/algo001",
     "path": "AlgoPosts/algo001"
+  },
+  {
+    "id": "algo002",
+    "type": "node",
+    "title": "Find second largest number in an array using javascript and python",
+    "tags": ["javascript", "python", "algorithm"],
+    "preText": "In this tutorial we will write a program to find second largest number in an array using javascript and python",
+    "date": "May 14, 2019",
+    "slug": "algo/algo002",
+    "path": "AlgoPosts/algo002"
   }
 ]

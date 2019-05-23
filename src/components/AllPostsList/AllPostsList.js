@@ -65,6 +65,14 @@ export default class AllPostsList extends Component {
             cpntent="react,node,javascript,node.js,react.js,algorithm"
           />
         </Helmet>
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
         {allPostList.map(post => {
           let slug = post.slug;
 
@@ -83,6 +91,14 @@ export default class AllPostsList extends Component {
             </div>
           );
         })}
+        <ins
+          class="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-format="fluid"
+          data-ad-layout-key="-fb+5w+4e-db+86"
+          data-ad-client="ca-pub-1381796141216228"
+          data-ad-slot="6474438773"
+        />
       </div>
     );
   }
