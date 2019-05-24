@@ -15,7 +15,7 @@ class App extends Component {
   
   componentDidMount() {
     (window.adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-8247326759009917",
+      google_ad_client: "ca-pub-1381796141216228",
       enable_page_level_ads: true
     });
   }
