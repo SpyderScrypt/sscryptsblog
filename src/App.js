@@ -10,14 +10,19 @@ import NodePostsList from "./components/NodePostsList/NodePostsList";
 import AlgoPostsList from "./components/AlgoPostsList/AlgoPostsList";
 // import { createBrowserHistory } from "history";
 // const customHistory = createBrowserHistory();
+import ReactGA from "react-ga";
 
 class App extends Component {
-  
   componentDidMount() {
     (window.adsbygoogle = window.adsbygoogle || []).push({
       google_ad_client: "ca-pub-1381796141216228",
       enable_page_level_ads: true
     });
+
+    (function initializeReactGA() {
+      ReactGA.initialize("UA-140827642-1");
+      ReactGA.pageview("/anypagevisit");
+    })();
   }
 
   render() {
