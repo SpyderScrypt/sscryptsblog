@@ -62,7 +62,7 @@ export default class AllPostsList extends Component {
           />
           <meta
             name="keywords"
-            cpntent="react,node,javascript,node.js,react.js,algorithm"
+            content="react,node,javascript,node.js,react.js,algorithm,blog"
           />
         </Helmet>
         <ins

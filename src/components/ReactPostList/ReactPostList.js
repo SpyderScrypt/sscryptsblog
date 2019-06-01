@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import reactPostList from "../../jsonFiles/reactPosts.json";
 import "./stylesheet/ReactPostListStyle.css";
@@ -37,6 +38,15 @@ export default class ReactPostList extends Component {
 
     return (
       <div className="reactPostList">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>React Tutorial</title>
+          <meta name="description" content="Latest React Tutorial" />
+          <meta
+            name="keywords"
+            content="react,node,javascript,node.js,react.js,algorithm,blog"
+          />
+        </Helmet>
         {reactPostList.map(post => {
           let slug = post.slug;
           let postDetails = post;

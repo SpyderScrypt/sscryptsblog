@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import nodePostList from "../../jsonFiles/nodePosts.json";
 import "./stylesheet/NodePostsListStyle.css";
@@ -37,6 +38,15 @@ export default class NodePostsList extends Component {
 
     return (
       <div className="reactPostList">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Node Tutorial</title>
+          <meta name="description" content="Latest Node.js Tutorial" />
+          <meta
+            name="keywords"
+            content="react,node,javascript,node.js,react.js,algorithm,blog"
+          />
+        </Helmet>
         {nodePostList.map(post => {
           let slug = post.slug;
           let postDetails = post;
