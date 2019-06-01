@@ -31,7 +31,7 @@ export default class react001 extends Component {
           />
           <meta
             name="keywords"
-            cpntent="react,svg,javascript,react.js"
+            content="react,svg,javascript,react.js"
           />
         </Helmet>
         <ins

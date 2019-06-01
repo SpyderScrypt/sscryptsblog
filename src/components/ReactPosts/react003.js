@@ -30,7 +30,7 @@ export default class react003 extends Component {
           />
           <meta
             name="keywords"
-            cpntent="react,form,echarts,javascript,react.js"
+            content="react,form,echarts,javascript,react.js"
           />
         </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>

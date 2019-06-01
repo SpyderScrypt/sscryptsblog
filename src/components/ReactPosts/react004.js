@@ -32,7 +32,7 @@ export default class react004 extends Component {
           />
           <meta
             name="keywords"
-            cpntent="react,echarts,javascript,react.js"
+            content="react,echarts,javascript,react.js"
           />
         </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>

@@ -31,7 +31,7 @@ export default class react002 extends Component {
           />
           <meta
             name="keywords"
-            cpntent="react,chart,echarts,javascript,react.js"
+            content="react,chart,echarts,javascript,react.js"
           />
         </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>

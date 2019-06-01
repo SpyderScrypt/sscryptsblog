@@ -30,7 +30,7 @@ export default class node001 extends Component {
           />
           <meta
             name="keywords"
-            cpntent="react,node,javascript,react.js,node.js,pdf"
+            content="react,node,javascript,react.js,node.js,pdf"
           />
         </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>

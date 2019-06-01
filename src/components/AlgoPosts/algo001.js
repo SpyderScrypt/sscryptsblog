@@ -34,7 +34,7 @@ export default class algo001 extends Component {
           />
           <meta
             name="keywords"
-            cpntent="python,node,javascript,algorithm,node.js"
+            content="python,node,javascript,algorithm,node.js"
           />
         </Helmet>
         <p className="title"> {this.props.postDetails.title}</p>
