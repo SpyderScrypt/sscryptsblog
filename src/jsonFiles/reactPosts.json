@@ -4,7 +4,7 @@
     "type": "react",
     "title": "Using SVG with React",
     "tags": ["react", "javascript", "svg"],
-    "preText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ...",
+    "preText": "In this tutorial, we will understand 3 different ways to use SVG in react app...",
     "date": "January 14, 2018",
     "slug": "react/react001",
     "path": "ReactPosts/react001"
